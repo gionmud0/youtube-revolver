@@ -66,7 +66,7 @@ If the video is in fullscreen mode, it rotates the video 180 degrees using CSS t
   `const mouseY = event.clientY || event.touches[0].clientY;` // get y position of mouse/touch
   `const rotateX = ((mouseY / height) - 0.5) * 20;` // calculate x-axis rotation angle
   `const rotateY = ((mouseX / width) - 0.5) * 20;` // calculate y-axis rotation angle
-  `video.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;` // apply rotation to video
+  `video.style.transform =` ``rotateX(${rotateX}deg) rotateY(${rotateY}deg)``; // apply rotation to video
 `}`
 
 
