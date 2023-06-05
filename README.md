@@ -4,16 +4,16 @@
 `const videoFrame = document.getElementById("video-frame");`
 // Add a mouseover event listener to the video frame element
 // This will trigger when the user hovers over the video frame
-`videoFrame.addEventListener("mouseover", () => {
+`videoFrame.addEventListener("mouseover", () => {`
   // Unmute the video when the user hovers over the video frame
-  videoFrame.unmute();
+  `videoFrame.unmute();
 });`
 
 
 <b>Explanation:</b>
 
-This code identifies the video frame element with the ID "video-frame"
-It then adds an event listener to the video frame element for the "mouseover" event
+This code identifies the video frame element with the ID `"video-frame"`
+It then adds an event listener to the video frame element for the `"mouseover"` event
 When the user hovers over the video frame, the event listener triggers and unmutes the video
 
 Next, we need to add a revolve/rotate function for fullscreen mode.
@@ -59,15 +59,15 @@ If the video is in fullscreen mode, it rotates the video 180 degrees using CSS t
 
 // function to rotate video
 `function rotateVideo(event) {
-  const video = document.querySelector("video"); // get current video element
-  const width = window.innerWidth; // get window width
-  const height = window.innerHeight; // get window height
-  const mouseX = event.clientX || event.touches[0].clientX; // get x position of mouse/touch
-  const mouseY = event.clientY || event.touches[0].clientY; // get y position of mouse/touch
-  const rotateX = ((mouseY / height) - 0.5) * 20; // calculate x-axis rotation angle
-  const rotateY = ((mouseX / width) - 0.5) * 20; // calculate y-axis rotation angle
-  video.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`; // apply rotation to video
-}`
+  const video = document.querySelector("video");` // get current video element
+  `const width = window.innerWidth;` // get window width
+  `const height = window.innerHeight;` // get window height
+  `const mouseX = event.clientX || event.touches[0].clientX;` // get x position of mouse/touch
+  `const mouseY = event.clientY || event.touches[0].clientY;` // get y position of mouse/touch
+  `const rotateX = ((mouseY / height) - 0.5) * 20;` // calculate x-axis rotation angle
+  `const rotateY = ((mouseX / width) - 0.5) * 20;` // calculate y-axis rotation angle
+  `video.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;` // apply rotation to video
+`}`
 
 
 <b>Explanation:</b>
